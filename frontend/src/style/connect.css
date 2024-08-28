@@ -1,0 +1,160 @@
+/* Updated Styles for the Connect Section */
+.connect {
+  background-color: #f9f9f9;
+  padding: 50px 0;
+  text-align: center;
+  border-top: 3px solid #32cd32; /* Added border-top for emphasis */
+  border-bottom: 3px solid #32cd32; /* Added border-bottom for emphasis */
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 600;
+  /* background-image: url("https://images.pexels.com/photos/1646753/pexels-photo-1646753.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-size: cover; */
+}
+
+.connect .curly-font {
+  font-size: 42px; /* Increased font size for emphasis */
+  font-family: "Times New Roman", Times, serif;
+  color: #32cd32; /* Green color for emphasis */
+  margin-left: 0;
+}
+
+.connect .columns {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px; /* Increased margin-top for better spacing */
+  gap: 20px; /* Added gap for better spacing between columns */
+  flex-wrap: wrap; /* Allows columns to wrap on smaller screens */
+  background-color: #f9f9f9;
+}
+
+.connect .column {
+  background-color: #f9f9f9;
+  flex: 1; /* Allows columns to grow and shrink */
+  min-width: 280px; /* Ensures columns don't get too narrow on smaller screens */
+  max-width: 30%; /* Limits maximum width to 30% of the parent container */
+  text-align: left;
+
+  padding: 20px; /* Added padding for better spacing */
+  border-radius: 10px; /* Added border-radius for rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Added subtle box-shadow */
+  margin-bottom: 20px; /* Added margin-bottom to separate rows */
+}
+
+.connect .column h3 {
+  font-size: 24px;
+  color: #404145;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #32cd32; /* Added border-bottom for emphasis */
+  padding-bottom: 10px; /* Added padding-bottom for spacing */
+}
+
+.connect .column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.connect .column ul li {
+  font-size: 18px; /* Increased font size for better readability */
+  color: #555; /* Slightly darker color for better contrast */
+  margin-bottom: 15px; /* Increased margin-bottom for better spacing */
+}
+
+.connect .column ul li a {
+  color: #32cd32; /* Link color */
+  text-decoration: none; /* Remove underline */
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.connect .column ul li a:hover {
+  color: #32cd32; /* Darker shade on hover */
+  text-decoration: underline; /* Underline on hover */
+}
+
+/* Style for the "Get Started" button */
+.get-started-btn {
+  display: inline-block; /* Changed display to inline-block for better alignment */
+  padding: 15px 30px; /* Increased padding for a larger button */
+  margin-top: 40px; /* Increased margin-top for better spacing */
+  background: #1dbf73;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px; /* Increased font size for better visibility */
+  cursor: pointer;
+  text-align: center;
+  transition: background 0.3s ease; /* Added transition for smoother hover effect */
+}
+
+.get-started-btn:hover {
+  background: #32cd32; /* Darker shade of green on hover */
+}
+
+/* Additional Styling */
+.connect .container {
+  max-width: 1200px; /* Constrain width for better layout */
+  margin: 0 auto; /* Center the container */
+  padding: 0 20px; /* Padding for responsiveness */
+}
+
+/* Media Queries for Mobile Responsiveness */
+
+/* For tablets and small desktops (up to 1024px) */
+@media (max-width: 1024px) {
+  .connect .columns {
+    flex-direction: column; /* Stack columns vertically */
+    align-items: center; /* Center align the columns */
+  }
+
+  .connect .column {
+    max-width: 80%; /* Limit width to 80% of the parent container */
+    margin-bottom: 30px; /* Increase margin for better spacing */
+  }
+
+  .get-started-btn {
+    padding: 12px 24px; /* Slightly smaller padding for buttons */
+    font-size: 16px; /* Slightly smaller font size */
+  }
+}
+
+/* For large mobile phones (up to 768px) */
+@media (max-width: 768px) {
+  .connect .curly-font {
+    font-size: 36px; /* Decrease font size for better fit */
+  }
+
+  .connect .column {
+    max-width: 90%; /* Limit width to 90% of the parent container */
+  }
+
+  .get-started-btn {
+    padding: 10px 20px; /* Smaller padding for buttons */
+    font-size: 14px; /* Smaller font size */
+  }
+}
+
+/* For small mobile phones (up to 480px) */
+@media (max-width: 480px) {
+  .connect .curly-font {
+    font-size: 30px; /* Further decrease font size */
+  }
+
+  .connect .column {
+    max-width: 95%; /* Limit width to 95% of the parent container */
+    padding: 15px; /* Reduce padding */
+  }
+
+  .connect .column h3 {
+    font-size: 20px; /* Reduce heading font size */
+  }
+
+  .connect .column ul li {
+    font-size: 16px; /* Reduce list item font size */
+    margin-bottom: 10px; /* Reduce margin between list items */
+  }
+
+  .get-started-btn {
+    padding: 8px 16px; /* Smaller padding for buttons */
+    font-size: 12px; /* Smaller font size */
+    margin-top: 30px; /* Reduce margin-top */
+  }
+}

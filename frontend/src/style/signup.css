@@ -1,0 +1,146 @@
+/* Container styling */
+.custom_signup_container {
+  width: 50vw;
+  max-width: 700px; /* Increased max-width for better readability */
+  margin: 0 auto; /* Center align horizontally */
+  padding: 1.5rem; /* Add padding for spacing */
+  font-family: "Times New Roman", Times, serif;
+  background-color: #f9f9f9;
+}
+
+/* Title styling */
+.signup_title {
+  font-size: 2rem; /* Larger font size */
+  text-align: center; /* Center align the title */
+  color: #32cd32; /* Primary color */
+}
+
+/* Form styling */
+.signup_form {
+  padding: 1rem;
+  border-radius: 10px; /* Slightly larger border radius */
+  background-color: #f8f9fa; /* Light grey background for better contrast */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Softer shadow for depth */
+}
+
+/* Form field styling */
+.form-outline {
+  position: relative;
+}
+
+.form-outline input,
+.form-outline textarea {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.125rem; /* Slightly larger font size */
+  border: 1px solid #ced4da;
+  border-radius: 6px; /* Larger border radius */
+  transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  background-color: #ffffff; /* White background */
+  color: #333; /* Darker text color for better visibility */
+}
+
+/* Adding background color and border to input fields */
+.form-outline input,
+.form-outline textarea {
+  background-color: #e9ecef; /* Light grey background for input fields */
+  border: 2px solid #ced4da; /* Thicker border for better visibility */
+}
+
+.form-outline input:focus,
+.form-outline textarea:focus {
+  outline: none;
+  border-color: #80bdff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+/* Placeholder color */
+.form-outline input::placeholder,
+.form-outline textarea::placeholder {
+  color: #aaa; /* Lighter grey for placeholder text */
+}
+
+/* Label styling */
+.form-outline label {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  color: #666; /* Darker grey for better visibility */
+  font-size: 0.875rem;
+  transition: top 0.3s ease, left 0.3s ease, font-size 0.3s ease;
+}
+
+.form-outline input:focus + .form-label,
+.form-outline input:not(:placeholder-shown) + .form-label,
+.form-outline textarea:focus + .form-label,
+.form-outline textarea:not(:placeholder-shown) + .form-label {
+  top: -0.5rem;
+  left: 0.75rem;
+  font-size: 0.75rem;
+  color: #32cd32; /* Primary color */
+  background-color: #f8f9fa; /* Match form background color */
+  padding: 0 0.25rem; /* Adjust padding for better appearance */
+}
+
+/* Button styling */
+.btn-primary {
+  background-color: #32cd32;
+  border-color: #007bff;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.125rem; /* Slightly larger font size */
+  transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+}
+
+.btn-primary:hover {
+  background-color: #214b21;
+  border-color: #0041a2;
+}
+
+.btn-primary:focus {
+  box-shadow: 0 0 0 0.2rem rgba(10, 199, 25, 0.5);
+}
+
+/* Media queries for mobile responsiveness */
+@media (max-width: 768px) {
+  .custom_signup_container {
+    width: 100vw; /* Adjust width for smaller screens */
+    padding: 1rem; /* Reduce padding for smaller screens */
+  }
+
+  .signup_title {
+    font-size: 1.5rem; /* Adjust title font size for smaller screens */
+  }
+
+  .form-outline input,
+  .form-outline textarea {
+    font-size: 1rem; /* Adjust input font size for smaller screens */
+    padding: 0.75rem; /* Adjust padding for smaller screens */
+  }
+
+  .btn-primary {
+    padding: 0.5rem 1rem; /* Adjust button padding for smaller screens */
+    font-size: 1rem; /* Adjust button font size for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .custom_signup_container {
+    width: 100vw; /* Full width for very small screens */
+    padding: 0.5rem; /* Reduce padding further for very small screens */
+  }
+
+  .signup_title {
+    font-size: 1.25rem; /* Adjust title font size for very small screens */
+  }
+
+  .form-outline input,
+  .form-outline textarea {
+    font-size: 0.875rem; /* Adjust input font size for very small screens */
+    padding: 0.5rem; /* Adjust padding for very small screens */
+  }
+
+  .btn-primary {
+    padding: 0.5rem 0.75rem; /* Adjust button padding for very small screens */
+    font-size: 0.875rem; /* Adjust button font size for very small screens */
+  }
+}

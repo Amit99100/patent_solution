@@ -1,0 +1,112 @@
+/* Navbar overall styling */
+.navbar {
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(221, 220, 220, 0.1);
+  background-color: #f9f9f9;
+  margin-bottom: 20px;
+  /* background-image: url("https://images.pexels.com/photos/281260/pexels-photo-281260.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-repeat: no-repeat;
+  background-size: cover; */
+  text-decoration: none;
+}
+
+/* Navbar link styling */
+.nav-link {
+  color: black;
+  font-size: 0.9rem;
+
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.1rem;
+  transition: background-color 0.3s, color 0.3s;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  background-color: #0acc34;
+  color: rgb(255, 255, 255);
+}
+.nav-link {
+  /* background-color: rgb(104, 199, 152);
+  color: white !important; */
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* Navbar brand styling */
+.navbar-brand {
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* Navbar toggler (hamburger) button styling */
+.navbar-toggler {
+  border: none;
+  outline: none;
+  font-size: 1.5rem;
+
+  border-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Navbar items spacing */
+.navbar-nav {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding-left: 0;
+}
+
+.nav-item {
+  margin-left: 2rem;
+}
+
+/* Collapsed navbar adjustments */
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    justify-content: flex-start; /* Align items to the start */
+    width: 100%; /* Ensure full width */
+  }
+
+  .navbar-brand {
+    margin-right: auto;
+    display: block; /* Ensure logo is not hidden */
+    margin-bottom: 1rem; /* Add space below the brand when collapsed */
+  }
+
+  .navbar-nav {
+    flex-direction: column; /* Stack items vertically */
+    width: 100%; /* Full width for better alignment */
+  }
+
+  .nav-item {
+    margin: 0; /* Remove horizontal margin */
+    width: 100%; /* Full width for each item */
+  }
+
+  .nav-link {
+    width: 100%; /* Full width for each link */
+    text-align: center; /* Center align text */
+    margin-bottom: 0.5rem; /* Add space between items */
+    padding: 0.75rem; /* Increase padding for touch-friendly size */
+
+    border-radius: 0; /* Remove border-radius for collapsed items */
+  }
+
+  .nav-link:hover {
+    background-color: #0acc34; /* Slight hover effect */
+  }
+}
+
+.navbar .navbar-toggler {
+  color: rgb(0, 0, 0);
+}
+.navbar .navbar-toggler {
+  border-color: rgba(
+    255,
+    255,
+    255,
+    0.5
+  ); /* Change border color to blend with the navbar */
+}

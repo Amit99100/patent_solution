@@ -1,0 +1,44 @@
+.how-it-works {
+  padding: 2rem;
+  background-color: #f9f9f9; /* Adjust background color */
+  text-align: center;
+}
+
+.how-it-works h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.steps {
+  display: flex;
+  flex-direction: column; /* Adjust if you want horizontal layout */
+  align-items: center;
+  gap: 1.5rem; /* Space between steps */
+}
+
+.step {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 80%;
+}
+
+.step h3 {
+  font-size: 1.5rem;
+}
+
+.step p {
+  font-size: 1rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 1rem;
+}
+
+video {
+  margin-top: 1rem;
+  max-width: 100%;
+}

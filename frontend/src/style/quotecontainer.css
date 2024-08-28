@@ -1,0 +1,138 @@
+/* quotecontainer.css */
+
+/* Container to hold both the logo and form */
+.flex-container {
+  margin-top: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* height: 85vh;  */
+  padding: 2rem; /* Padding for spacing */
+  background-color: #ffffff; /* Light background color for contrast */
+  margin-bottom: 0px;
+  background-color: #f9f9f9;
+  /* background-image: url("https://images.pexels.com/photos/66284/winter-nature-season-trees-66284.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"); */
+  /* background-image: url("https://images.pexels.com/photos/1646753/pexels-photo-1646753.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-repeat: no-repeat;
+
+  background-size: cover; */
+}
+
+#imageContainer {
+  flex: 1; /* Take up available space */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#imageContainer img {
+  max-width: 100%; /* Responsive sizing */
+  height: auto; /* Maintain aspect ratio */
+  padding: 1rem; /* Add padding around the logo */
+}
+
+.signup-container {
+  margin-top: 0;
+  max-height: 10%;
+  flex: 1; /* Take up available space */
+  max-width: 35%; /* Maximum width for the sign-up form */
+  margin-left: 1rem; /* Space between logo and form */
+  background-color: #ffffff; /* White background */
+  padding: 2rem; /* Padding inside the form */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.signup_title {
+  font-size: 1rem; /* Adjusted title size */
+  margin-bottom: 1.5rem;
+  color: #32cd32; /* Primary color */
+}
+
+.signup_form .form-outline {
+  margin-bottom: 1.5rem;
+}
+
+.signup_form .form-outline input,
+.signup_form .form-outline textarea {
+  width: 100%;
+
+  border: 1px solid #ced4da;
+  border-radius: 6px;
+  background-color: #e9ecef; /* Light grey background for input fields */
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.signup_form .form-outline input:focus,
+.signup_form .form-outline textarea:focus {
+  outline: none;
+  border-color: #80bdff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.signup_form .form-outline label {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  color: #666;
+  transition: top 0.3s ease, left 0.3s ease, font-size 0.3s ease;
+}
+
+.signup_form .form-outline input:focus + .form-label,
+.signup_form .form-outline input:not(:placeholder-shown) + .form-label,
+.signup_form .form-outline textarea:focus + .form-label,
+.signup_form .form-outline textarea:not(:placeholder-shown) + .form-label {
+  top: -0.5rem;
+  left: 0.75rem;
+  font-size: 0.75rem;
+  color: #32cd32;
+  background-color: #f8f9fa;
+  padding: 0 0.25rem;
+}
+
+.btn-primary {
+  width: 100%; /* Full-width button */
+  background-color: #32cd32;
+  border-color: #32cd32;
+  padding: 0.75rem;
+  font-size: 1.125rem;
+  transition: background-color 0.2s, border-color 0.2s;
+}
+
+.btn-primary:hover {
+  background-color: #32cd32;
+  border-color: #32cd32;
+}
+
+.btn-primary:focus {
+  box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
+}
+
+.introText {
+  margin-top: 1.5rem;
+  font-size: 1.5rem;
+  color: #333;
+  text-align: center;
+  font-weight: bolder;
+  font-family: "Times New Roman", Times, serif;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .flex-container {
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+  }
+
+  .signup-container {
+    margin-left: 0;
+    margin-top: 2rem;
+    max-width: 200%;
+    padding: 1rem;
+  }
+
+  #imageContainer img {
+    max-width: 110%; /* Slightly smaller for mobile */
+  }
+}

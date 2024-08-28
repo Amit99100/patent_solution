@@ -1,0 +1,44 @@
+.link-to-fotter h4 {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  color: #0acc34;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 5px;
+  font-size: 110%;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+  footer .link-group {
+    width: 45%; /* Reduce width on smaller screens */
+  }
+
+  .footer-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 5px;
+  }
+}
+
+.link-to-fotter :hover {
+  color: rgb(33, 50, 201);
+}
+.link-to-fotter li {
+  list-style-type: none;
+  text-decoration: none;
+  a {
+    color: inherit;
+  }
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2px;
+}
