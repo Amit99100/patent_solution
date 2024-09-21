@@ -27,7 +27,6 @@ const path = require("path");
 
 
 
-const uri = "mongodb+srv://akm1632456:fvYpKSKCmWnNz1sq@patentapp.pwfedco.mongodb.net/?retryWrites=true&w=majority&appName=patentapp";
 
 mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true })
     .then(() => console.log('Connected to MongoDB Atlas'))
