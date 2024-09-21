@@ -4,9 +4,8 @@ const User = require("../models/user");
 const nodemailer = require('nodemailer');
 const randomString = require('randomstring');
 require('dotenv').config();
-const emailUser = "akm1632456@gmail.com";
-// const pass = "Rack@191170";
-const pass = "zqlwpjjqbqwofdbg"; // came by creating the nodemailer app , in google 
+const emailUser ="some@gmail.com" ; 
+const pass ="something" ; // came by creating the nodemailer app , in google 
 //https://stackoverflow.com/questions/60701936/error-invalid-login-application-specific-password-required  for more info 
 
 const sendResetPasswordMail = async (name, email, token) => {
