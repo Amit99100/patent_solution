@@ -4,7 +4,7 @@ const questionSchema = new mongoose.Schema({
     questionTitle: {
         type: String,
         required: true,
-        maxlength: 100
+        maxlength: 100 
 
     },
     questionDetails: {
