@@ -32,7 +32,7 @@ module.exports = async (email, subject, text) => {
 
 
         await transporter.sendMail(mailOptions);
-        console.log("mail send successfully ");
+        console.log("E mail send successfully ");
     } catch (error) {
         console.log("Error not sending email:", error.message);
     }
